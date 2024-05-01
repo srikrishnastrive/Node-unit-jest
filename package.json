@@ -1,0 +1,28 @@
+{
+  "name": "jest-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jest-html-reporter": "^3.10.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest":{
+    "collectCoverage":true,
+    "reporters":[
+      "default",
+    ["./node_modules/jest-html-reporter", {
+      "pageTitle": "Test Report"
+    }]
+    ]
+  }
+}
